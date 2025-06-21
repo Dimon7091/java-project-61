@@ -17,10 +17,10 @@ version = "1.0-SNAPSHOT"
 repositories {
     mavenCentral()
 }
-
+val mockitoVersion = "4.5.1"
 dependencies {
-    testImplementation(platform("org.junit:junit-bom:5.10.0"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.mockito:mockito-core:$mockitoVersion")
+    testImplementation("org.mockito:mockito-inline:$mockitoVersion")
     implementation("org.apache.commons:commons-lang3:3.17.0")
 }
 
