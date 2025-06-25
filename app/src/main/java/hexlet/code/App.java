@@ -37,6 +37,8 @@ public class App {
             case 5:
                 ArithmeticProgression.game();
                 break;
+            default:
+                System.out.println("Game not found");
         }
     }
 }
