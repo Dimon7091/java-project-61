@@ -2,10 +2,7 @@ package hexlet.code;
 
 import java.util.Scanner;
 
-import hexlet.code.games.ArithmeticProgression;
-import hexlet.code.games.Calculator;
-import hexlet.code.games.Even;
-import hexlet.code.games.Gcd;
+import hexlet.code.games.*;
 
 public class App {
     public static void main(String[] args) {
@@ -17,6 +14,7 @@ public class App {
                 3 - Calc
                 4 - GCD
                 5 - Progression
+                6 - Prime
                 0 - Exit""");
         String choice = scanner.next();
         System.out.println("Your choice: " + choice);
@@ -35,7 +33,12 @@ public class App {
                 Gcd.game();
                 break;
             case 5:
-                ArithmeticProgression.game();
+                Progression.game();
+                break;
+            case 6:
+                Prime.game();
+                break;
+            case 0:
                 break;
             default:
                 System.out.println("Game not found");
