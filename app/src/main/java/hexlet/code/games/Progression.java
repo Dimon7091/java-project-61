@@ -4,7 +4,7 @@ import hexlet.code.Engine;
 
 import java.util.Random;
 
-public class ArithmeticProgression {
+public class Progression {
     public static void game() {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок, колличество раундов зависить от длины.
@@ -21,7 +21,7 @@ public class ArithmeticProgression {
             StringBuilder rowString = new StringBuilder(" ");
             for (var j = 0; j < rowLength; j++ ) {
                     rowNumber += randomStep;
-                if (j == 3) {
+                if (j == randomPosition) {
                     rowString.append("* ");
                     hiddenNumber = rowNumber;
                 } else {
