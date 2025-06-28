@@ -18,7 +18,7 @@ public class Engine {
             var correctAnswer = arrGame[i][1];
             var incorrectMessage = "'" + userAnswer + "'" + " is wrong answer "
                     + ";(. Correct answer was " + "'" + correctAnswer + "'" + ".\n"
-                    + "Let's try again, " + userName;
+                    + "Let's try again, " + userName + "!";
             if (arrGame[i][1].equals(userAnswer)) {
                 System.out.println(correctMessage);
             } else {
