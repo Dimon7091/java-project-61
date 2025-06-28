@@ -18,14 +18,14 @@ public class Progression {
             int rowLength = 10;
             int rowNumber = startNumber;
             int hiddenNumber = 0;
-            StringBuilder rowString = new StringBuilder(" ");
+            StringBuilder rowString = new StringBuilder();
             for (var j = 0; j < rowLength; j++) {
                 rowNumber += randomStep;
                 if (j == randomPosition) {
-                    rowString.append("* ");
+                    rowString.append(".. ");
                     hiddenNumber = rowNumber;
                 } else {
-                    rowString.append(rowNumber + " ");
+                    StringBuilder append = rowString.append(rowNumber + " ");
                 }
             }
             questionAndAnswer[i][0] = rowString.toString();
