@@ -26,27 +26,26 @@ public class App {
         System.out.print("May I have your name? ");
         String userName = scanner.next();
         System.out.println("Hello, " + userName + "!");
-        int numberOfGame = Integer.parseInt(choice);
-        switch (numberOfGame) {
-            case 1:
+        switch (choice) {
+            case "1":
                 Cli.greeting();
                 break;
-            case 2:
+            case "2":
                 Even.game(userName);
                 break;
-            case 3:
+            case "3":
                 Calculator.game(userName);
                 break;
-            case 4:
+            case "4":
                 Gcd.game(userName);
                 break;
-            case 5:
+            case "5":
                 Progression.game(userName);
                 break;
-            case 6:
+            case "6":
                 Prime.game(userName);
                 break;
-            case 0:
+            case "0":
                 break;
             default:
                 System.out.println("Game not found");
