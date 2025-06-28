@@ -5,7 +5,7 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Calculator {
-    public static void game() {
+    public static void game(String name) {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок, колличество раундов зависить от длины.
         String[][] questionAndAnswer = new String[3][2];
@@ -31,6 +31,6 @@ public class Calculator {
             String correctAnswer = String.valueOf(answer);
             questionAndAnswer[i][1] = correctAnswer;
         }
-        Engine.logicOfGames(description, questionAndAnswer);
+        Engine.logicOfGames(description, questionAndAnswer, name);
     }
 }

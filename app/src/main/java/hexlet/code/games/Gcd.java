@@ -5,7 +5,7 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Gcd {
-    public static void game() {
+    public static void game(String name) {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок,
         // колличество раундов зависить от длины первого массива.
@@ -24,7 +24,7 @@ public class Gcd {
             questionAndAnswer[i][1] = correctAnswer;
 
         }
-        Engine.logicOfGames(description, questionAndAnswer);
+        Engine.logicOfGames(description, questionAndAnswer, name);
     }
 
     public static int euclideanAlgorithm(int a, int b) {

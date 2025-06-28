@@ -5,7 +5,7 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Progression {
-    public static void game() {
+    public static void game(String name) {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок, колличество раундов зависить от длины.
         String[][] questionAndAnswer = new String[3][2];
@@ -31,6 +31,6 @@ public class Progression {
             questionAndAnswer[i][0] = rowString.toString();
             questionAndAnswer[i][1] = String.valueOf(hiddenNumber);
         }
-        Engine.logicOfGames(description, questionAndAnswer);
+        Engine.logicOfGames(description, questionAndAnswer, name);
     }
 }

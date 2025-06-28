@@ -5,7 +5,7 @@ import hexlet.code.Engine;
 import java.util.Random;
 
 public class Prime {
-    public static void game() {
+    public static void game(String name) {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок, колличество раундов зависить от длины.
         String[][] questionAndAnswer = new String[3][2];
@@ -33,6 +33,6 @@ public class Prime {
 
             questionAndAnswer[i][1] = correctAnswer;
         }
-        Engine.logicOfGames(description, questionAndAnswer);
+        Engine.logicOfGames(description, questionAndAnswer, name);
     }
 }

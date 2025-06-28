@@ -3,12 +3,8 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
-    public static void logicOfGames(String description, String[][] arrGame) {
-        Cli.greeting();
-        System.out.print("May I have your name? ");
+    public static void logicOfGames(String description, String[][] arrGame, String userName) {
         Scanner scanner = new Scanner(System.in);
-        var userName = scanner.next();
-        System.out.println("Hello, " + userName + "!");
         System.out.println(description);
         boolean isVictory = true;
         // Цыкл выполнения игры,
@@ -32,7 +28,7 @@ public class Engine {
             }
         }
         if (isVictory) {
-            System.out.println("Congratulations, " + userName);
+            System.out.println("Congratulations, " + userName + "!");
         }
     }
 }
