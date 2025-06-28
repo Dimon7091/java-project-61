@@ -8,12 +8,12 @@ public class Prime {
     public static void game() {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок, колличество раундов зависить от длины.
-        String[][] QuestionAndAnswer = new String[3][2];
+        String[][] questionAndAnswer = new String[3][2];
         String description = "Answer 'yes' if given number is prime. Otherwise answer 'no'.";
         // Цикл наполняет массив, вопрос, ответ.
-        for (var i = 0; i < QuestionAndAnswer.length; i++) {
+        for (var i = 0; i < questionAndAnswer.length; i++) {
             int randomInt = random.nextInt(2, 100);
-            QuestionAndAnswer[i][0] = String.valueOf(randomInt);
+            questionAndAnswer[i][0] = String.valueOf(randomInt);
             String correctAnswer = " ";
 
 
@@ -31,8 +31,8 @@ public class Prime {
                 }
             }
 
-            QuestionAndAnswer[i][1] = correctAnswer;
+            questionAndAnswer[i][1] = correctAnswer;
         }
-        Engine.logicOfGames(description, QuestionAndAnswer);
+        Engine.logicOfGames(description, questionAndAnswer);
     }
 }

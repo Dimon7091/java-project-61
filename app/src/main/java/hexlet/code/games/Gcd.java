@@ -9,22 +9,22 @@ public class Gcd {
         Random random = new Random();
         // Массив вопрос ответ, отправляется в движок,
         // колличество раундов зависить от длины первого массива.
-        String[][] QuestionAndAnswer = new String[3][2];
+        String[][] questionAndAnswer = new String[3][2];
         String description = "Find the greatest common divisor of given numbers.";
         // Цикл наполняет массив, вопрос, ответ.
-        for (var i = 0; i < QuestionAndAnswer.length; i++) {
+        for (var i = 0; i < questionAndAnswer.length; i++) {
             int a = random.nextInt(3, 100);
             int b = random.nextInt(3, 100);
 
-            var Answer = euclideanAlgorithm(a, b);
+            var answer = euclideanAlgorithm(a, b);
 
             String impression = String.valueOf(a) + " " + String.valueOf(b);
-            QuestionAndAnswer[i][0] = impression;
-            String correctAnswer = String.valueOf(Answer);
-            QuestionAndAnswer[i][1] = correctAnswer;
+            questionAndAnswer[i][0] = impression;
+            String correctAnswer = String.valueOf(answer);
+            questionAndAnswer[i][1] = correctAnswer;
 
         }
-        Engine.logicOfGames(description, QuestionAndAnswer);
+        Engine.logicOfGames(description, questionAndAnswer);
     }
 
     public static int euclideanAlgorithm(int a, int b) {
