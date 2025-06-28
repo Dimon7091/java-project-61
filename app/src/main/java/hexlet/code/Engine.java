@@ -8,7 +8,7 @@ public class Engine {
         System.out.print("May I have your name? ");
         Scanner scanner = new Scanner(System.in);
         var userName = scanner.next();
-        System.out.println("Hello, " + userName);
+        System.out.println("Hello, " + userName + "!");
         System.out.println(description);
         boolean isVictory = true;
         // Цыкл выполнения игры,
