@@ -11,6 +11,7 @@ import hexlet.code.games.Prime;
 public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+      
         System.out.println("""
                 Please enter the game number and press Enter.
                 1 - Greet
